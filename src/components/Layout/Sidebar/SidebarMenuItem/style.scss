@@ -1,0 +1,31 @@
+$selected-color: #dde2ff;
+.sidebar-menu-item {
+    display: flex;
+    align-items: center;
+    figure {
+        margin-left: 33px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2 {
+        font-size: 16px;
+        color: #a4a6b3;
+        letter-spacing: 0.2px;
+        margin: 18px 24px;
+    }
+}
+
+.sidebar-menu-item-selected {
+    border-left: $selected-color 3px solid;
+    background-color: rgba(159, 162, 180, 0.08);
+    h2 {
+        color: $selected-color;
+    }
+    figure {
+        img {
+            fill: red;
+        }
+    }
+}
