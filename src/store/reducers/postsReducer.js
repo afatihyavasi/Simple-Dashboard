@@ -2,7 +2,6 @@ import { GET_POSTS } from '../actions/type'
 
 const INITIAL_STATE = {
     posts: [],
-    errorMessage: '',
 }
 
 const postsReducer = (state = INITIAL_STATE, action) => {

@@ -20,7 +20,7 @@ const Sidebar = () => {
       <div className="sidebar-menu-items">
         <SidebarMenuItem logo={LoginLogo} content={'Login'} isSelected/>
         <SidebarMenuItem logo={UsersLogo} content={'Users'}/>
-        <SidebarMenuItem logo={BlogsLogo} content={'Blogs'}/>
+        <SidebarMenuItem logo={BlogsLogo} content={'Posts'}/>
       </div>
 
     </div>

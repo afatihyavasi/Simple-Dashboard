@@ -10,7 +10,7 @@ const Users = () => {
 
     useEffect(() => {
         dispatch(getUsers());
-    })
+    },[])
 
     return (
         <div className='users'>
