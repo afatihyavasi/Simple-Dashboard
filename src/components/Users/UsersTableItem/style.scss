@@ -1,0 +1,21 @@
+.users-table-item{
+  display: flex;
+  padding: 10px 3px;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px #E5E5E5 solid;
+  transition: all .2s ease;
+  &:hover{
+    background: #f2f3f5;
+  }
+  img{
+    width: 30px;
+    border-radius: 50%;
+  }
+}
+
+.users-table-item>*{
+  display: flex;
+  flex:1;
+}
