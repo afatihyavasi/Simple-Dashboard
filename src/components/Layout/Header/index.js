@@ -6,12 +6,14 @@ import HeaderAvatar from '../../../assets/headerAvatar.png'
 const Header = () => {
     return (
         <div className="header">
-            <h3 className="header-title">Varolan sayfa ile degistir</h3>
+            <h3 className="header-title">Login</h3>
 
             <div className="header-info">
                 <div className="header-icons">
                     <figure>
                         <img src={SearchLogo} alt={'Search logo'} />
+                    </figure>
+                    <figure>
                         <img src={NotificationLogo} alt={'Notification logo'} />
                     </figure>
                 </div>
@@ -24,7 +26,7 @@ const Header = () => {
                 </div>
             </div>
 
-            {/*<hr width="1" size="500" style={{margin:20}}/>*/}
+
         </div>
     )
 }
