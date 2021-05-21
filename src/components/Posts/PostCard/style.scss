@@ -1,35 +1,35 @@
 .post-item-container {
-  width: 400px;
-  height: 180px;
-  margin: 20px;
-  padding: 8px;
+    width: 400px;
+    height: 180px;
+    margin: 20px;
+    padding: 8px;
 }
 
 .post-item-header-user-info {
-  display: flex;
-  align-items: center;
-  margin: 10px 5px 8px 0;
+    display: flex;
+    align-items: center;
+    margin: 10px 5px 8px 0;
 
-  img {
-    width: 20px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
+    img {
+        width: 20px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
 
-  h5 {
-    margin-left: 7px;
-  }
+    h5 {
+        margin-left: 7px;
+    }
 
-  h6 {
-    flex: 1;
-    color: #9e9c9c;
-    text-align: end;
-  }
+    h6 {
+        flex: 1;
+        color: #9e9c9c;
+        text-align: end;
+    }
 }
 
 .post-item-content {
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }

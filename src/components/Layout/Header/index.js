@@ -2,11 +2,16 @@ import './style.scss'
 import SearchLogo from '../../../assets/search.svg'
 import NotificationLogo from '../../../assets/notification.svg'
 import HeaderAvatar from '../../../assets/headerAvatar.png'
-
+import { useLocation } from 'react-router-dom'
 const Header = () => {
+    let location = useLocation()
+    const getTitle = (lct) => {
+        const removedSlash = lct.pathname.substr(1)
+        return `${removedSlash.charAt(0).toUpperCase()}${removedSlash.slice(1)}`
+    }
     return (
         <div className="header">
-            <h3 className="header-title">Login</h3>
+            <h3 className="header-title">{getTitle(location) || 'Overview'}</h3>
 
             <div className="header-info">
                 <div className="header-icons">
@@ -25,8 +30,6 @@ const Header = () => {
                     </figure>
                 </div>
             </div>
-
-
         </div>
     )
 }

@@ -1,37 +1,39 @@
-import {useEffect} from "react";
-import {useSelector, useDispatch} from "react-redux";
-import {getUsers} from "../../store/actions/usersActions";
-import UsersTableItem from "./UsersTableItem";
+import { useEffect } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { getUsers } from '../../store/actions/usersActions'
+import UsersTableItem from './UsersTableItem'
 import './style.scss'
 
 const Users = () => {
-    const dispatch = useDispatch();
-    const users = useSelector(state => state.usersReducer.users);
+    const dispatch = useDispatch()
+    const users = useSelector((state) => state.usersReducer.users)
 
     useEffect(() => {
-        dispatch(getUsers());
-    },[])
+        dispatch(getUsers())
+    }, [])
 
     return (
-        <div className='users'>
+        <div className="users">
             <div className="users-table">
                 <div className="users-table-header">
                     <h5 className="users-table-header-avatar">Avatar</h5>
                     <h5 className="users-table-header-name">Name</h5>
-                    <h5 className="users-table-header-phone-number">Phone Number</h5>
+                    <h5 className="users-table-header-phone-number">
+                        Phone Number
+                    </h5>
                     <h5 className="users-table-header-city">City</h5>
                     <h5 className="users-table-header-company">Company</h5>
                 </div>
                 <div className="users-table-content">
-                    {users.map(user => (
+                    {users.map((user) => (
                         <div key={user.id}>
-                            <UsersTableItem user={user}/>
+                            <UsersTableItem user={user} />
                         </div>
                     ))}
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default Users;
+export default Users

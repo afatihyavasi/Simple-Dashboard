@@ -1,11 +1,14 @@
+import { useLocation } from 'react-router-dom'
 import classNames from 'classnames'
 import './style.scss'
 
-const SidebarMenuItem = ({ content, logo, isSelected }) => {
+const SidebarMenuItem = ({ content, logo }) => {
+    let location = useLocation()
     return (
         <div
             className={classNames('sidebar-menu-item', {
-                'sidebar-menu-item-selected': isSelected,
+                'sidebar-menu-item-selected':
+                    location.pathname.substr(1) === content.toLowerCase(),
             })}
         >
             <figure>

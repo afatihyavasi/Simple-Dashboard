@@ -1,0 +1,33 @@
+.login {
+    display: flex;
+    justify-content: center;
+    h5 {
+        color: #9c9898;
+    }
+}
+.login-container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0px 1.6px rgba(0, 0, 0, 0.004),
+        0 0.1px 3.8px rgba(0, 0, 0, 0.006), 0 0.1px 7.1px rgba(0, 0, 0, 0.007),
+        0 0.2px 12.7px rgba(0, 0, 0, 0.008), 0 0.4px 23.8px rgba(0, 0, 0, 0.009),
+        0 1px 57px rgba(0, 0, 0, 0.01);
+    div {
+        margin: 20px;
+    }
+    button {
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: transparent;
+        transition: all 0.2s ease;
+        cursor: pointer;
+        &:hover {
+            background: #d6d6d9;
+        }
+    }
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+}
